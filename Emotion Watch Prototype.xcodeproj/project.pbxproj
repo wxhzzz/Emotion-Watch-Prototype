@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93B1D4C220EA9ABF0077149B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1D4C120EA9ABF0077149B /* AppDelegate.swift */; };
+		93B1D4C420EA9ABF0077149B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1D4C320EA9ABF0077149B /* ViewController.swift */; };
+		93B1D4C720EA9ABF0077149B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B1D4C520EA9ABF0077149B /* Main.storyboard */; };
+		93B1D4C920EA9AC00077149B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B1D4C820EA9AC00077149B /* Assets.xcassets */; };
+		93B1D4CC20EA9AC00077149B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B1D4CA20EA9AC00077149B /* LaunchScreen.storyboard */; };
+		93B1D4D120EA9AC00077149B /* Emotion Watch Prototype WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 93B1D4D020EA9AC00077149B /* Emotion Watch Prototype WatchKit App.app */; };
+		93B1D4D720EA9AC00077149B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B1D4D520EA9AC00077149B /* Interface.storyboard */; };
+		93B1D4D920EA9AC10077149B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B1D4D820EA9AC10077149B /* Assets.xcassets */; };
+		93B1D4E020EA9AC10077149B /* Emotion Watch Prototype WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 93B1D4DF20EA9AC10077149B /* Emotion Watch Prototype WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		93B1D4E520EA9AC10077149B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1D4E420EA9AC10077149B /* InterfaceController.swift */; };
+		93B1D4E720EA9AC10077149B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1D4E620EA9AC10077149B /* ExtensionDelegate.swift */; };
+		93B1D4E920EA9AC10077149B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1D4E820EA9AC10077149B /* NotificationController.swift */; };
+		93B1D4EB20EA9AC10077149B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B1D4EA20EA9AC10077149B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93B1D4D220EA9AC00077149B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93B1D4B620EA9ABF0077149B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93B1D4CF20EA9AC00077149B;
+			remoteInfo = "Emotion Watch Prototype WatchKit App";
+		};
+		93B1D4E120EA9AC10077149B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93B1D4B620EA9ABF0077149B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93B1D4DE20EA9AC10077149B;
+			remoteInfo = "Emotion Watch Prototype WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		93B1D4F320EA9AC10077149B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				93B1D4E020EA9AC10077149B /* Emotion Watch Prototype WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93B1D4F720EA9AC10077149B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				93B1D4D120EA9AC00077149B /* Emotion Watch Prototype WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		93B1D4BE20EA9ABF0077149B /* Emotion Watch Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emotion Watch Prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B1D4C120EA9ABF0077149B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93B1D4C320EA9ABF0077149B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93B1D4C620EA9ABF0077149B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93B1D4C820EA9AC00077149B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93B1D4CB20EA9AC00077149B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93B1D4CD20EA9AC00077149B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93B1D4D020EA9AC00077149B /* Emotion Watch Prototype WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emotion Watch Prototype WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B1D4D620EA9AC00077149B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		93B1D4D820EA9AC10077149B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93B1D4DA20EA9AC10077149B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93B1D4DF20EA9AC10077149B /* Emotion Watch Prototype WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Emotion Watch Prototype WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B1D4E420EA9AC10077149B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		93B1D4E620EA9AC10077149B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		93B1D4E820EA9AC10077149B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		93B1D4EA20EA9AC10077149B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93B1D4EC20EA9AC10077149B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93B1D4ED20EA9AC10077149B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93B1D4BB20EA9ABF0077149B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93B1D4DC20EA9AC10077149B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93B1D4B520EA9ABF0077149B = {
+			isa = PBXGroup;
+			children = (
+				93B1D4C020EA9ABF0077149B /* Emotion Watch Prototype */,
+				93B1D4D420EA9AC00077149B /* Emotion Watch Prototype WatchKit App */,
+				93B1D4E320EA9AC10077149B /* Emotion Watch Prototype WatchKit Extension */,
+				93B1D4BF20EA9ABF0077149B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93B1D4BF20EA9ABF0077149B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93B1D4BE20EA9ABF0077149B /* Emotion Watch Prototype.app */,
+				93B1D4D020EA9AC00077149B /* Emotion Watch Prototype WatchKit App.app */,
+				93B1D4DF20EA9AC10077149B /* Emotion Watch Prototype WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93B1D4C020EA9ABF0077149B /* Emotion Watch Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				93B1D4C120EA9ABF0077149B /* AppDelegate.swift */,
+				93B1D4C320EA9ABF0077149B /* ViewController.swift */,
+				93B1D4C520EA9ABF0077149B /* Main.storyboard */,
+				93B1D4C820EA9AC00077149B /* Assets.xcassets */,
+				93B1D4CA20EA9AC00077149B /* LaunchScreen.storyboard */,
+				93B1D4CD20EA9AC00077149B /* Info.plist */,
+			);
+			path = "Emotion Watch Prototype";
+			sourceTree = "<group>";
+		};
+		93B1D4D420EA9AC00077149B /* Emotion Watch Prototype WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				93B1D4D520EA9AC00077149B /* Interface.storyboard */,
+				93B1D4D820EA9AC10077149B /* Assets.xcassets */,
+				93B1D4DA20EA9AC10077149B /* Info.plist */,
+			);
+			path = "Emotion Watch Prototype WatchKit App";
+			sourceTree = "<group>";
+		};
+		93B1D4E320EA9AC10077149B /* Emotion Watch Prototype WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				93B1D4E420EA9AC10077149B /* InterfaceController.swift */,
+				93B1D4E620EA9AC10077149B /* ExtensionDelegate.swift */,
+				93B1D4E820EA9AC10077149B /* NotificationController.swift */,
+				93B1D4EA20EA9AC10077149B /* Assets.xcassets */,
+				93B1D4EC20EA9AC10077149B /* Info.plist */,
+				93B1D4ED20EA9AC10077149B /* PushNotificationPayload.apns */,
+			);
+			path = "Emotion Watch Prototype WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93B1D4BD20EA9ABF0077149B /* Emotion Watch Prototype */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93B1D4F820EA9AC10077149B /* Build configuration list for PBXNativeTarget "Emotion Watch Prototype" */;
+			buildPhases = (
+				93B1D4BA20EA9ABF0077149B /* Sources */,
+				93B1D4BB20EA9ABF0077149B /* Frameworks */,
+				93B1D4BC20EA9ABF0077149B /* Resources */,
+				93B1D4F720EA9AC10077149B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93B1D4D320EA9AC00077149B /* PBXTargetDependency */,
+			);
+			name = "Emotion Watch Prototype";
+			productName = "Emotion Watch Prototype";
+			productReference = 93B1D4BE20EA9ABF0077149B /* Emotion Watch Prototype.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93B1D4CF20EA9AC00077149B /* Emotion Watch Prototype WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93B1D4F420EA9AC10077149B /* Build configuration list for PBXNativeTarget "Emotion Watch Prototype WatchKit App" */;
+			buildPhases = (
+				93B1D4CE20EA9AC00077149B /* Resources */,
+				93B1D4F320EA9AC10077149B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93B1D4E220EA9AC10077149B /* PBXTargetDependency */,
+			);
+			name = "Emotion Watch Prototype WatchKit App";
+			productName = "Emotion Watch Prototype WatchKit App";
+			productReference = 93B1D4D020EA9AC00077149B /* Emotion Watch Prototype WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		93B1D4DE20EA9AC10077149B /* Emotion Watch Prototype WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93B1D4F020EA9AC10077149B /* Build configuration list for PBXNativeTarget "Emotion Watch Prototype WatchKit Extension" */;
+			buildPhases = (
+				93B1D4DB20EA9AC10077149B /* Sources */,
+				93B1D4DC20EA9AC10077149B /* Frameworks */,
+				93B1D4DD20EA9AC10077149B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Emotion Watch Prototype WatchKit Extension";
+			productName = "Emotion Watch Prototype WatchKit Extension";
+			productReference = 93B1D4DF20EA9AC10077149B /* Emotion Watch Prototype WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93B1D4B620EA9ABF0077149B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Paul Wu";
+				TargetAttributes = {
+					93B1D4BD20EA9ABF0077149B = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					93B1D4CF20EA9AC00077149B = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					93B1D4DE20EA9AC10077149B = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 93B1D4B920EA9ABF0077149B /* Build configuration list for PBXProject "Emotion Watch Prototype" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93B1D4B520EA9ABF0077149B;
+			productRefGroup = 93B1D4BF20EA9ABF0077149B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93B1D4BD20EA9ABF0077149B /* Emotion Watch Prototype */,
+				93B1D4CF20EA9AC00077149B /* Emotion Watch Prototype WatchKit App */,
+				93B1D4DE20EA9AC10077149B /* Emotion Watch Prototype WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93B1D4BC20EA9ABF0077149B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93B1D4CC20EA9AC00077149B /* LaunchScreen.storyboard in Resources */,
+				93B1D4C920EA9AC00077149B /* Assets.xcassets in Resources */,
+				93B1D4C720EA9ABF0077149B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93B1D4CE20EA9AC00077149B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93B1D4D920EA9AC10077149B /* Assets.xcassets in Resources */,
+				93B1D4D720EA9AC00077149B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93B1D4DD20EA9AC10077149B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93B1D4EB20EA9AC10077149B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93B1D4BA20EA9ABF0077149B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93B1D4C420EA9ABF0077149B /* ViewController.swift in Sources */,
+				93B1D4C220EA9ABF0077149B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93B1D4DB20EA9AC10077149B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93B1D4E920EA9AC10077149B /* NotificationController.swift in Sources */,
+				93B1D4E720EA9AC10077149B /* ExtensionDelegate.swift in Sources */,
+				93B1D4E520EA9AC10077149B /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93B1D4D320EA9AC00077149B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93B1D4CF20EA9AC00077149B /* Emotion Watch Prototype WatchKit App */;
+			targetProxy = 93B1D4D220EA9AC00077149B /* PBXContainerItemProxy */;
+		};
+		93B1D4E220EA9AC10077149B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93B1D4DE20EA9AC10077149B /* Emotion Watch Prototype WatchKit Extension */;
+			targetProxy = 93B1D4E120EA9AC10077149B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93B1D4C520EA9ABF0077149B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93B1D4C620EA9ABF0077149B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93B1D4CA20EA9AC00077149B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93B1D4CB20EA9AC00077149B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		93B1D4D520EA9AC00077149B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93B1D4D620EA9AC00077149B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93B1D4EE20EA9AC10077149B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93B1D4EF20EA9AC10077149B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93B1D4F120EA9AC10077149B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33SF7WA8X7;
+				INFOPLIST_FILE = "Emotion Watch Prototype WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "paul.Emotion-Watch-Prototype.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		93B1D4F220EA9AC10077149B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33SF7WA8X7;
+				INFOPLIST_FILE = "Emotion Watch Prototype WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "paul.Emotion-Watch-Prototype.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		93B1D4F520EA9AC10077149B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33SF7WA8X7;
+				IBSC_MODULE = Emotion_Watch_Prototype_WatchKit_Extension;
+				INFOPLIST_FILE = "Emotion Watch Prototype WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "paul.Emotion-Watch-Prototype.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		93B1D4F620EA9AC10077149B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33SF7WA8X7;
+				IBSC_MODULE = Emotion_Watch_Prototype_WatchKit_Extension;
+				INFOPLIST_FILE = "Emotion Watch Prototype WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "paul.Emotion-Watch-Prototype.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		93B1D4F920EA9AC10077149B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33SF7WA8X7;
+				INFOPLIST_FILE = "Emotion Watch Prototype/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "paul.Emotion-Watch-Prototype";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93B1D4FA20EA9AC10077149B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33SF7WA8X7;
+				INFOPLIST_FILE = "Emotion Watch Prototype/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "paul.Emotion-Watch-Prototype";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93B1D4B920EA9ABF0077149B /* Build configuration list for PBXProject "Emotion Watch Prototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93B1D4EE20EA9AC10077149B /* Debug */,
+				93B1D4EF20EA9AC10077149B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93B1D4F020EA9AC10077149B /* Build configuration list for PBXNativeTarget "Emotion Watch Prototype WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93B1D4F120EA9AC10077149B /* Debug */,
+				93B1D4F220EA9AC10077149B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93B1D4F420EA9AC10077149B /* Build configuration list for PBXNativeTarget "Emotion Watch Prototype WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93B1D4F520EA9AC10077149B /* Debug */,
+				93B1D4F620EA9AC10077149B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93B1D4F820EA9AC10077149B /* Build configuration list for PBXNativeTarget "Emotion Watch Prototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93B1D4F920EA9AC10077149B /* Debug */,
+				93B1D4FA20EA9AC10077149B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93B1D4B620EA9ABF0077149B /* Project object */;
+}
