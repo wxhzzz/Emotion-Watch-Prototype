@@ -21,6 +21,7 @@ class ViewController: UIViewController,UITableViewDataSource {
         }
         let contact=list[indexPath.row]
         cell.textLabel?.text=contact.name
+        cell.imageView?.image = contact.image
         return cell
     }
     

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Emotion Watch Prototype.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

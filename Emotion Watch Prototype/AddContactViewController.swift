@@ -18,7 +18,7 @@ class AddContactViewController:UIViewController{
         super.viewDidLoad()
     }
     @IBAction func add(_ sender: UIButton) {
-        listViewController.list.append(Contact(name: name.text!, age: Int(age.text!)!))
+        listViewController.list.append(Contact(name: name.text!, age: Int(age.text!)!, image: UIImage(named: "funny-dog")!))
         NSKeyedArchiver.archiveRootObject(listViewController.list, toFile: Contact.ArchiveURL.path)
         listViewController.loadContacts()
         dismiss(animated: false, completion: nil)
