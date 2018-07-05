@@ -10,7 +10,9 @@ import UIKit
 import os.log
 
 class ViewController: UIViewController,UITableViewDataSource {
+    
     var list=[Contact]()
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
     }
@@ -25,14 +27,17 @@ class ViewController: UIViewController,UITableViewDataSource {
         return cell
     }
     
-
     @IBOutlet weak var contactList: UITableView!
+    
     override func viewDidLoad() {
+        if(!UserDefaults.standard.bool(forKey: "firstLaunch")){
+            NSKeyedArchiver.archiveRootObject(list, toFile: Contact.ArchiveURL.path)
+            UserDefaults.standard.set(true, forKey: "firstLaunch")
+            UserDefaults.standard.synchronize()
+        }
         super.viewDidLoad()
-        saveContacts()
         list = (NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [Contact])!
         contactList.dataSource=self
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,6 +59,7 @@ class ViewController: UIViewController,UITableViewDataSource {
             os_log("Failed to save contacts...", log: OSLog.default, type: .error)
         }
     }
+    
     func loadContacts(){
         list = (NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [Contact])!
         contactList.reloadData()

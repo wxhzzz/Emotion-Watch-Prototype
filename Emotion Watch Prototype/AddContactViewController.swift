@@ -17,12 +17,14 @@ class AddContactViewController:UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
     @IBAction func add(_ sender: UIButton) {
         listViewController.list.append(Contact(name: name.text!, age: Int(age.text!)!, image: UIImage(named: "funny-dog")!))
         NSKeyedArchiver.archiveRootObject(listViewController.list, toFile: Contact.ArchiveURL.path)
         listViewController.loadContacts()
         dismiss(animated: false, completion: nil)
     }
+    
     @IBAction func cancel(_ sender: UIButton) {
         dismiss(animated: false, completion: nil)
     }

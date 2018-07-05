@@ -9,14 +9,17 @@ import Foundation
 import os.log
 import UIKit
 class Contact: NSObject,NSCoding {
+    
     static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
     static let ArchiveURL = DocumentsDirectory.appendingPathComponent("contacts")
+    
     //Saves contact as an NSCoder
     func encode(with aCoder: NSCoder) {
         aCoder.encode(name, forKey: "name")
         aCoder.encode(age, forKey: "age")
         aCoder.encode(image, forKey: "image")
     }
+    
     //loads object from the NSCoder
     required convenience init?(coder aDecoder: NSCoder) {
         guard let name = aDecoder.decodeObject(forKey: "name") as? String else {
