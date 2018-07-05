@@ -10,7 +10,7 @@ import UIKit
 import os.log
 
 class ViewController: UIViewController,UITableViewDataSource {
-    //list is a list of contacts
+    //list is a list of contacts $$
     var list=[Contact]()
     //returns the number of contacts and tells how many rows there needs to be
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
