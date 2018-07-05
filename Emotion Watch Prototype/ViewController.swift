@@ -10,7 +10,7 @@ import UIKit
 import os.log
 
 class ViewController: UIViewController,UITableViewDataSource {
-    //list is a list of contacts $$
+    //list is a list of contacts
     var list=[Contact]()
     //returns the number of contacts and tells how many rows there needs to be
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -50,12 +50,16 @@ class ViewController: UIViewController,UITableViewDataSource {
     }
     
     @IBAction func addContact(_ sender: UIButton) {
+        //creates a button for add contact
+        //goes to the new Add Contact View Controller Screen
         let add = storyboard?.instantiateViewController(withIdentifier: "add") as! AddContactViewController
         add.listViewController=self
+        //animations is set to false so there will be no animations in the view
         present(add, animated: false, completion: nil)
     }
     
     private func saveContacts() {
+        //saving a contact to the harddrive
         let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(list, toFile: Contact.ArchiveURL.path)
         if isSuccessfulSave {
             os_log("Contacts successfully saved.", log: OSLog.default, type: .debug)
@@ -65,6 +69,7 @@ class ViewController: UIViewController,UITableViewDataSource {
     }
     
     func loadContacts(){
+        //maintains the contacts
         list = (NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [Contact])!
         contactList.reloadData()
     }
