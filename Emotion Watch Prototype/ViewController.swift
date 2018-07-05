@@ -28,6 +28,7 @@ class ViewController: UIViewController,UITableViewDataSource {
     @IBOutlet weak var contactList: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        saveContacts()
         list = (NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [Contact])!
         contactList.dataSource=self
         // Do any additional setup after loading the view, typically from a nib.
