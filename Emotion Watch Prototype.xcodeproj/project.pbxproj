@@ -20,6 +20,10 @@
 		93B1D4E720EA9AC10077149B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1D4E620EA9AC10077149B /* ExtensionDelegate.swift */; };
 		93B1D4E920EA9AC10077149B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1D4E820EA9AC10077149B /* NotificationController.swift */; };
 		93B1D4EB20EA9AC10077149B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B1D4EA20EA9AC10077149B /* Assets.xcassets */; };
+		93B1D4FC20EC16480077149B /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1D4FB20EC16480077149B /* ContactCell.swift */; };
+		93B1D4FE20EC1BCB0077149B /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1D4FD20EC1BCB0077149B /* Contact.swift */; };
+		93E8276B20EE5A2600F79834 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8276A20EE5A2600F79834 /* AddContactViewController.swift */; };
+		93E8276D20EE88EC00F79834 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8276C20EE88EC00F79834 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,10 @@
 		93B1D4EA20EA9AC10077149B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93B1D4EC20EA9AC10077149B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93B1D4ED20EA9AC10077149B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		93B1D4FB20EC16480077149B /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		93B1D4FD20EC1BCB0077149B /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		93E8276A20EE5A2600F79834 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		93E8276C20EE88EC00F79834 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +140,10 @@
 				93B1D4C820EA9AC00077149B /* Assets.xcassets */,
 				93B1D4CA20EA9AC00077149B /* LaunchScreen.storyboard */,
 				93B1D4CD20EA9AC00077149B /* Info.plist */,
+				93B1D4FB20EC16480077149B /* ContactCell.swift */,
+				93B1D4FD20EC1BCB0077149B /* Contact.swift */,
+				93E8276A20EE5A2600F79834 /* AddContactViewController.swift */,
+				93E8276C20EE88EC00F79834 /* ProfileViewController.swift */,
 			);
 			path = "Emotion Watch Prototype";
 			sourceTree = "<group>";
@@ -291,6 +303,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93E8276D20EE88EC00F79834 /* ProfileViewController.swift in Sources */,
+				93E8276B20EE5A2600F79834 /* AddContactViewController.swift in Sources */,
+				93B1D4FE20EC1BCB0077149B /* Contact.swift in Sources */,
+				93B1D4FC20EC16480077149B /* ContactCell.swift in Sources */,
 				93B1D4C420EA9ABF0077149B /* ViewController.swift in Sources */,
 				93B1D4C220EA9ABF0077149B /* AppDelegate.swift in Sources */,
 			);
