@@ -11,7 +11,8 @@ import os.log
 
 class ViewController: UIViewController,UITableViewDataSource {
     
-    var list=[Contact]()
+    var list=[String:Contact]()
+    var usernames=[String]()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
@@ -21,9 +22,9 @@ class ViewController: UIViewController,UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath) as? ContactCell  else {
             fatalError("The dequeued cell is not an instance of ContactCell.")
         }
-        let contact=list[indexPath.row]
-        cell.textLabel?.text=contact.name
-        cell.imageView?.image = contact.image
+        let contact=list[usernames[indexPath.row]]
+        cell.textLabel?.text=contact?.name
+        cell.imageView?.image = contact?.image
         return cell
     }
     
@@ -36,7 +37,11 @@ class ViewController: UIViewController,UITableViewDataSource {
             UserDefaults.standard.synchronize()
         }
         super.viewDidLoad()
-        list = (NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [Contact])!
+        list = (NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [String:Contact])!
+        usernames=[String]()
+        for(name) in list.keys{
+            usernames.append(name)
+        }
         contactList.dataSource=self
     }
 
@@ -45,11 +50,12 @@ class ViewController: UIViewController,UITableViewDataSource {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func addContact(_ sender: UIButton) {
+    @IBAction func addContact(_ sender: UIBarButtonItem) {
         let add = storyboard?.instantiateViewController(withIdentifier: "add") as! AddContactViewController
         add.listViewController=self
         present(add, animated: false, completion: nil)
     }
+    
     
     private func saveContacts() {
         let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(list, toFile: Contact.ArchiveURL.path)
@@ -61,7 +67,11 @@ class ViewController: UIViewController,UITableViewDataSource {
     }
     
     func loadContacts(){
-        list = (NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [Contact])!
+        list = (NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [String:Contact])!
+        usernames=[String]()
+        for(name) in list.keys{
+            usernames.append(name)
+        }
         contactList.reloadData()
     }
 

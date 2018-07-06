@@ -12,6 +12,8 @@ class AddContactViewController:UIViewController{
     
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var age: UITextField!
+    @IBOutlet weak var username: UITextField!
+    
     var listViewController = ViewController()
     
     override func viewDidLoad() {
@@ -19,7 +21,7 @@ class AddContactViewController:UIViewController{
     }
     
     @IBAction func add(_ sender: UIButton) {
-        listViewController.list.append(Contact(name: name.text!, age: Int(age.text!)!, image: UIImage(named: "funny-dog")!))
+        listViewController.list.updateValue(Contact(name: name.text!, age: Int(age.text!)!, image: UIImage(named: "funny-dog")!), forKey: username.text!)
         NSKeyedArchiver.archiveRootObject(listViewController.list, toFile: Contact.ArchiveURL.path)
         listViewController.loadContacts()
         dismiss(animated: false, completion: nil)

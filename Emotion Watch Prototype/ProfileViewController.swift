@@ -14,5 +14,6 @@ class ProfileViewController: UIViewController{
     }
     
     @IBAction func deleteContact(_ sender: UIButton) {
+        
     }
 }
