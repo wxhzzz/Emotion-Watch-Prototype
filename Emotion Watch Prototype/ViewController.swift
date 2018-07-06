@@ -27,7 +27,6 @@ class ViewController: UIViewController,UITableViewDataSource {
         }
 
         //index into contact list based on row
-        
         let contact=list[usernames[indexPath.row]]
         //puts the name in the contact cell
         cell.textLabel?.text=contact?.name
