@@ -9,7 +9,7 @@
 import UIKit
 import os.log
 
-class ViewController: UIViewController,UITableViewDataSource {
+class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
     
     var list=[String:Contact]()
@@ -25,15 +25,20 @@ class ViewController: UIViewController,UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath) as? ContactCell  else {
             fatalError("The dequeued cell is not an instance of ContactCell.")
         }
-
-        //index into contact list based on row
         
+        //index into contact list based on row
         let contact=list[usernames[indexPath.row]]
         //puts the name in the contact cell
         cell.textLabel?.text=contact?.name
         //puts the image in the contact cell
         cell.imageView?.image = contact?.image
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let profile = storyboard?.instantiateViewController(withIdentifier: "profile") as! ProfileViewController
+        profile.username = usernames[indexPath.row]
+        show(profile, sender: self)
     }
     
     @IBOutlet weak var contactList: UITableView!
@@ -51,6 +56,7 @@ class ViewController: UIViewController,UITableViewDataSource {
             usernames.append(name)
         }
         contactList.dataSource=self
+        contactList.delegate=self
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,16 +74,10 @@ class ViewController: UIViewController,UITableViewDataSource {
         present(add, animated: false, completion: nil)
     }
     
-    
-    private func saveContacts() {
-        //saving a contact to the harddrive
-        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(list, toFile: Contact.ArchiveURL.path)
-        if isSuccessfulSave {
-            os_log("Contacts successfully saved.", log: OSLog.default, type: .debug)
-        } else {
-            os_log("Failed to save contacts...", log: OSLog.default, type: .error)
-        }
+    @IBAction func profile(sender:UIStoryboardSegue){
+        
     }
+    
     
     func loadContacts(){
         list = (NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [String:Contact])!
