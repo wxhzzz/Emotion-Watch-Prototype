@@ -87,7 +87,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Delete"/>
                                 <connections>
-                                    <action selector="delete:" destination="wea-cF-Sc1" eventType="touchUpInside" id="mBq-Do-sCe"/>
+                                    <action selector="deleteContact:" destination="wea-cF-Sc1" eventType="touchUpInside" id="LIc-YU-EgR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXN-6d-Lc5">
