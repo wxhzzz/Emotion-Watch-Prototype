@@ -9,5 +9,5 @@
 import Foundation
 import UIKit
 class ContactCell: UITableViewCell{
-    
+    var username=""
 }
