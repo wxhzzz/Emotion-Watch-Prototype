@@ -25,7 +25,6 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath) as? ContactCell  else {
             fatalError("The dequeued cell is not an instance of ContactCell.")
         }
-        
         //index into contact list based on row
         let contact=list[usernames[indexPath.row]]
         //puts the name in the contact cell
