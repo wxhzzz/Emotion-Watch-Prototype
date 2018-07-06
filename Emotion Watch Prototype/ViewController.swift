@@ -27,11 +27,12 @@ class ViewController: UIViewController,UITableViewDataSource {
         }
 
         //index into contact list based on row
-        let contact=list[indexPath.row]
+        
+        let contact=list[usernames[indexPath.row]]
         //puts the name in the contact cell
-        cell.textLabel?.text=contact.name
+        cell.textLabel?.text=contact?.name
         //puts the image in the contact cell
-        cell.imageView?.image = contact.image
+        cell.imageView?.image = contact?.image
         return cell
     }
     
