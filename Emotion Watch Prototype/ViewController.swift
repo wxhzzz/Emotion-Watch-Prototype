@@ -5,14 +5,17 @@
 //  Created by Paul Wu on 7/2/18.
 //  Copyright © 2018 Paul Wu. All rights reserved.
 //
-
+//Paul
 import UIKit
 import os.log
 
 class ViewController: UIViewController,UITableViewDataSource {
-    //list is a list of contacts
-    var list=[Contact]()
-    //returns the number of contacts and tells how many rows there needs to be
+
+    
+    var list=[String:Contact]()
+    var usernames=[String]()
+    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
     }
@@ -22,6 +25,7 @@ class ViewController: UIViewController,UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath) as? ContactCell  else {
             fatalError("The dequeued cell is not an instance of ContactCell.")
         }
+
         //index into contact list based on row
         let contact=list[indexPath.row]
         //puts the name in the contact cell
@@ -40,7 +44,11 @@ class ViewController: UIViewController,UITableViewDataSource {
             UserDefaults.standard.synchronize()
         }
         super.viewDidLoad()
-        list = (NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [Contact])!
+        list = (NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [String:Contact])!
+        usernames=[String]()
+        for(name) in list.keys{
+            usernames.append(name)
+        }
         contactList.dataSource=self
     }
 
@@ -49,7 +57,8 @@ class ViewController: UIViewController,UITableViewDataSource {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func addContact(_ sender: UIButton) {
+
+    @IBAction func addContact(_ sender: UIBarButtonItem) {
         //creates a button for add contact
         //goes to the new Add Contact View Controller Screen
         let add = storyboard?.instantiateViewController(withIdentifier: "add") as! AddContactViewController
@@ -57,6 +66,7 @@ class ViewController: UIViewController,UITableViewDataSource {
         //animations is set to false so there will be no animations in the view
         present(add, animated: false, completion: nil)
     }
+    
     
     private func saveContacts() {
         //saving a contact to the harddrive
@@ -69,8 +79,12 @@ class ViewController: UIViewController,UITableViewDataSource {
     }
     
     func loadContacts(){
-        //maintains the contacts
-        list = (NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [Contact])!
+        list = (NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [String:Contact])!
+        usernames=[String]()
+        for(name) in list.keys{
+            usernames.append(name)
+        }
+
         contactList.reloadData()
     }
 
