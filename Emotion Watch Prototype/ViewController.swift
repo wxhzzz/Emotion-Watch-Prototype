@@ -73,10 +73,6 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         present(add, animated: false, completion: nil)
     }
     
-    @IBAction func profile(sender:UIStoryboardSegue){
-        
-    }
-    
     
     func loadContacts(){
         list = (NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [String:Contact])!
