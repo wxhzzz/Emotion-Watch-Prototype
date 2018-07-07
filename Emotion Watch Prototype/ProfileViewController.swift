@@ -13,18 +13,21 @@ class ProfileViewController: UIViewController{
     @IBOutlet weak var age: UILabel!
     @IBOutlet weak var userimage: UIImageView!
     
-    
+    var list = [String:Contact]()
     var username=""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let list = (NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [String:Contact])!
+        list = (NSKeyedUnarchiver.unarchiveObject(withFile: Contact.ArchiveURL.path) as? [String:Contact])!
         name.text=list[username]?.name
         age.text=String(list[username]!.age)
         userimage.image=(list[username]?.image)
     }
     
     @IBAction func deleteContact(_ sender: UIButton) {
-        
+        list.removeValue(forKey: username)
+        NSKeyedArchiver.archiveRootObject(list, toFile: Contact.ArchiveURL.path)
+        let contactList = storyboard?.instantiateViewController(withIdentifier: "contactList")
+        show(contactList!, sender: self)
     }
 }
