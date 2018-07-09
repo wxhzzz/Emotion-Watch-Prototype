@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="o8N-2f-SZp">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -38,10 +38,32 @@
             </objects>
             <point key="canvasLocation" x="220" y="643"/>
         </scene>
-        <!--Interface Controller-->
+        <!--contactTable-->
         <scene sceneID="4vB-aB-OZo">
             <objects>
-                <controller id="o8N-2f-SZp"/>
+                <controller identifier="contactTable" id="o8N-2f-SZp" customClass="ContactTable" customModule="Emotion_Watch_Prototype_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="GXx-mi-Hna">
+                            <items>
+                                <tableRow identifier="RowController" id="l3K-a6-gbH" customClass="RowController" customModule="Emotion_Watch_Prototype_WatchKit_App" customModuleProvider="target">
+                                    <group key="rootItem" width="1" alignment="left" id="YoG-0i-urd">
+                                        <items>
+                                            <imageView width="0.29999999999999999" alignment="left" id="Wv6-gA-pkm"/>
+                                            <label width="0.69999999999999996" height="44" alignment="left" text="Label" id="cM6-OV-rXb"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="image" destination="Wv6-gA-pkm" id="J62-hs-wSV"/>
+                                        <outlet property="label" destination="cM6-OV-rXb" id="ILq-n7-qWS"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="contactTable" destination="GXx-mi-Hna" id="Th8-Ow-gOV"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
         </scene>
