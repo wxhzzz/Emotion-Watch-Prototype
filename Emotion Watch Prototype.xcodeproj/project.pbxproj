@@ -24,8 +24,10 @@
 		93B1D4FE20EC1BCB0077149B /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1D4FD20EC1BCB0077149B /* Contact.swift */; };
 		93E8276B20EE5A2600F79834 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8276A20EE5A2600F79834 /* AddContactViewController.swift */; };
 		93E8276D20EE88EC00F79834 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8276C20EE88EC00F79834 /* ProfileViewController.swift */; };
-		CFCE9D2820F3AAC9009B5274 /* ProfileInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE9D2720F3AAC9009B5274 /* ProfileInterfaceController.swift */; };
-		CFCE9D2A20F3B3DB009B5274 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE9D2920F3B3DB009B5274 /* Contact.swift */; };
+
+		F0DDD8A820F3B0C200985420 /* ContactTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DDD8A620F3B0BF00985420 /* ContactTable.swift */; };
+		F0DDD8AA20F3B16000985420 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DDD8A920F3B16000985420 /* Contact.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,8 +95,10 @@
 		93B1D4FD20EC1BCB0077149B /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		93E8276A20EE5A2600F79834 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		93E8276C20EE88EC00F79834 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		CFCE9D2720F3AAC9009B5274 /* ProfileInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInterfaceController.swift; sourceTree = "<group>"; };
-		CFCE9D2920F3B3DB009B5274 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+
+		F0DDD8A620F3B0BF00985420 /* ContactTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTable.swift; sourceTree = "<group>"; };
+		F0DDD8A920F3B16000985420 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +169,9 @@
 		93B1D4E320EA9AC10077149B /* Emotion Watch Prototype WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F0DDD8A620F3B0BF00985420 /* ContactTable.swift */,
 				93B1D4E420EA9AC10077149B /* InterfaceController.swift */,
+				F0DDD8A920F3B16000985420 /* Contact.swift */,
 				93B1D4E620EA9AC10077149B /* ExtensionDelegate.swift */,
 				93B1D4E820EA9AC10077149B /* NotificationController.swift */,
 				93B1D4EA20EA9AC10077149B /* Assets.xcassets */,
@@ -323,6 +329,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				93B1D4E920EA9AC10077149B /* NotificationController.swift in Sources */,
+				F0DDD8A820F3B0C200985420 /* ContactTable.swift in Sources */,
+				F0DDD8AA20F3B16000985420 /* Contact.swift in Sources */,
 				93B1D4E720EA9AC10077149B /* ExtensionDelegate.swift in Sources */,
 				CFCE9D2A20F3B3DB009B5274 /* Contact.swift in Sources */,
 				CFCE9D2820F3AAC9009B5274 /* ProfileInterfaceController.swift in Sources */,
