@@ -24,6 +24,8 @@
 		93B1D4FE20EC1BCB0077149B /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1D4FD20EC1BCB0077149B /* Contact.swift */; };
 		93E8276B20EE5A2600F79834 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8276A20EE5A2600F79834 /* AddContactViewController.swift */; };
 		93E8276D20EE88EC00F79834 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8276C20EE88EC00F79834 /* ProfileViewController.swift */; };
+		CFCE9D2820F3AAC9009B5274 /* ProfileInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE9D2720F3AAC9009B5274 /* ProfileInterfaceController.swift */; };
+		CFCE9D2A20F3B3DB009B5274 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE9D2920F3B3DB009B5274 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		93B1D4FD20EC1BCB0077149B /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		93E8276A20EE5A2600F79834 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		93E8276C20EE88EC00F79834 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CFCE9D2720F3AAC9009B5274 /* ProfileInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInterfaceController.swift; sourceTree = "<group>"; };
+		CFCE9D2920F3B3DB009B5274 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,8 @@
 				93B1D4EA20EA9AC10077149B /* Assets.xcassets */,
 				93B1D4EC20EA9AC10077149B /* Info.plist */,
 				93B1D4ED20EA9AC10077149B /* PushNotificationPayload.apns */,
+				CFCE9D2720F3AAC9009B5274 /* ProfileInterfaceController.swift */,
+				CFCE9D2920F3B3DB009B5274 /* Contact.swift */,
 			);
 			path = "Emotion Watch Prototype WatchKit Extension";
 			sourceTree = "<group>";
@@ -318,6 +324,8 @@
 			files = (
 				93B1D4E920EA9AC10077149B /* NotificationController.swift in Sources */,
 				93B1D4E720EA9AC10077149B /* ExtensionDelegate.swift in Sources */,
+				CFCE9D2A20F3B3DB009B5274 /* Contact.swift in Sources */,
+				CFCE9D2820F3AAC9009B5274 /* ProfileInterfaceController.swift in Sources */,
 				93B1D4E520EA9AC10077149B /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

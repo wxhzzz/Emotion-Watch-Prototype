@@ -7,7 +7,7 @@
 //
 
 import WatchKit
-import Foundation
+//import Foundation
 
 
 class InterfaceController: WKInterfaceController {
